@@ -1,5 +1,5 @@
-# Btsinda
-BTSINDA
+# Btinda
+BTINDA
 
 
 
