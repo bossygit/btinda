@@ -2,6 +2,6 @@
 BTINDA
 
 
-![alt text](https://raw.githubusercontent.com/rajilsaj/btinda/img.png)
+![alt text](https://raw.githubusercontent.com/rajilsaj/btinda/pr.png)
 
 
