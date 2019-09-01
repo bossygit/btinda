@@ -1,13 +1,52 @@
 {% extends "html.html" %}
 {% block content %}
-<div id="main" class="section-app">
+<div id="main"  role="main" class="section-app">
 	<div class="container">
 		<div class="betinda-box row justify-content-end">
 		<div class="col-md-6">
 		<h1 class="heading-primary">
-		<span class="heading-main">BTINDA</span>
 		<span class="heading-sub">Nous sommes à votre service</span>
 		</h1>
+<form class="form-service">
+<fieldset>
+<legend>Expediteur</legend>
+<div class="form-label-group">
+    <input type="text" id="inputNomExp" class="form-control" placeholder="Nom complet" required autofocus>
+    <label for="inputNomExp">Nom complet</label>
+  </div>
+
+  <div class="form-label-group">
+    <input type="tel" id="inputTelExp" class="form-control" placeholder="Telephone" required>
+    <label for="inputTelExp">Téléphone</label>
+  </div>
+  </fieldset>
+  <fieldset>
+<legend>Destinataire</legend>
+  <div class="form-label-group">
+    <input type="text" id="inputNomDest" class="form-control" placeholder="Nom complet" required autofocus>
+    <label for="inputNomDest">Nom complet</label>
+  </div>
+
+  <div class="form-label-group">
+    <input type="tel" id="inputTelDest" class="form-control" placeholder="Telephone" required>
+    <label for="inputTelDest">Téléphone</label>
+  </div>
+    <div class="form-label-group">
+    <input type="text" id="inputAdresse" class="form-control" placeholder="Adresse\Reference" required>
+    <label for="inputAdresse">Adresse\Reference</label>
+  </div>
+    <div class="form-label-group">
+    <label for="descTextarea">Description du service</label>
+    <textarea class="form-control" id="descTextarea" rows="2"></textarea>
+  </div>
+  </fieldset>
+
+
+  <button class="btn btn-lg btn-primary btn-block" type="submit">Commandez</button>
+
+</form>
+</body>
+</html>
 		</div>
 		</div>
 	</div>
