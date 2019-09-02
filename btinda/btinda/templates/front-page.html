@@ -7,37 +7,52 @@
 		<h1 class="heading-primary">
 		<span class="heading-sub">Nous sommes à votre service</span>
 		</h1>
-<form class="form-service">
+{% if message %}
+<div class="alert alert-success" role="alert">
+  {{ message }}
+</div>
+{% endif %}		
+<form class="form-service" action="{% url "course" %}" method="post">
+{% csrf_token %}
 <fieldset>
 <legend>Expediteur</legend>
 <div class="form-label-group">
-    <input type="text" id="inputNomExp" class="form-control" placeholder="Nom complet" required autofocus>
-    <label for="inputNomExp">Nom complet</label>
+	{{ form.exp_nom.errors }}
+	{{ form.exp_nom }}
+    <label for="{{ form.exp_nom.id_for_label }}">Nom complet</label>
   </div>
 
   <div class="form-label-group">
-    <input type="tel" id="inputTelExp" class="form-control" placeholder="Telephone" required>
-    <label for="inputTelExp">Téléphone</label>
+  	{{ form.exp_tel.errors }}
+	{{ form.exp_tel }}
+
+    <label for="{{ form.exp_tel.id_for_label }}">Téléphone</label>
   </div>
   </fieldset>
   <fieldset>
 <legend>Destinataire</legend>
   <div class="form-label-group">
-    <input type="text" id="inputNomDest" class="form-control" placeholder="Nom complet" required autofocus>
-    <label for="inputNomDest">Nom complet</label>
+  	{{ form.dest_nom.errors }}
+	{{ form.dest_nom }}
+
+    <label for="{{ form.dest_nom.id_for_label }}">Nom complet</label>
   </div>
 
   <div class="form-label-group">
-    <input type="tel" id="inputTelDest" class="form-control" placeholder="Telephone" required>
-    <label for="inputTelDest">Téléphone</label>
+  	{{ form.dest_tel.errors }}
+	{{ form.dest_tel }}
+
+    <label for="{{ form.dest_tel.id_for_label }}">Téléphone</label>
   </div>
     <div class="form-label-group">
-    <input type="text" id="inputAdresse" class="form-control" placeholder="Adresse\Reference" required>
-    <label for="inputAdresse">Adresse\Reference</label>
+	{{ form.dest_adresse.errors }}
+	{{ form.dest_adresse }}
+    <label for="{{ form.dest_adresse.id_for_label }}">Adresse\Reference</label>
   </div>
     <div class="form-label-group">
-    <label for="descTextarea">Description du service</label>
-    <textarea class="form-control" id="descTextarea" rows="2"></textarea>
+	{{ form.desc_colis.errors }}
+	{{ form.desc_colis }}
+    <label for="{{ form.desc_colis.id_for_label }}">Description du service</label>
   </div>
   </fieldset>
 
