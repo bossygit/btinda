@@ -16,11 +16,7 @@ class Course(models.Model):
         ordering = ['date']
     
     def __str__(self):
-        """ 
-        Cette méthode que nous définirons dans tous les modèles
-        nous permettra de reconnaître facilement les différents objets que 
-        nous traiterons plus tard dans l'administration
-        """
+
         return self.exp_nom
 
 
@@ -33,9 +29,5 @@ class Livreur(models.Model):
 
     
     def __str__(self):
-        """ 
-        Cette méthode que nous définirons dans tous les modèles
-        nous permettra de reconnaître facilement les différents objets que 
-        nous traiterons plus tard dans l'administration
-        """
+
         return self.nom
