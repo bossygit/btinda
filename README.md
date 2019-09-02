@@ -1,5 +1,9 @@
 # Btinda
 
+cd to the btinda/btinda folder in command prompt
+run python manage.py migrate
+run python manage.py runserver
+
 ![BTINDA](https://github.com/rajilsaj/btinda/blob/master/pr.png)
 
 #Btinda Database in Postgres
