@@ -2,16 +2,10 @@
 
 ```bash
 git clone https://github.com/rajilsaj/btinda.git
-```
-
-cd to the btinda/btinda folder in command prompt
-
-```bash
+git cd btinda
+git checkout bdjango
+git cd btinda
 run python manage.py migrate
-```
-then
-
-```bash
 run python manage.py runserver
 ```
 
