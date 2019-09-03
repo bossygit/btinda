@@ -2,9 +2,9 @@
 
 ```bash
 git clone https://github.com/rajilsaj/btinda.git
-git cd btinda
+cd btinda
 git checkout bdjango
-git cd btinda
+cd btinda
 run python manage.py migrate
 run python manage.py runserver
 ```
