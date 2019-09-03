@@ -5,8 +5,8 @@ git clone https://github.com/rajilsaj/btinda.git
 cd btinda
 git checkout bdjango
 cd btinda
-run python manage.py migrate
-run python manage.py runserver
+python manage.py migrate
+python manage.py runserver
 ```
 
 
