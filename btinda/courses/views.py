@@ -29,3 +29,6 @@ def course(request):
 
     
     return render(request, 'front-page.html', locals())
+
+        
+    
