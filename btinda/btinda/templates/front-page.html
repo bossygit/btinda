@@ -11,11 +11,11 @@
 		</h1>
 		{% if user.is_authenticated %}
 
-			<p><a href="{% url 'logout' %}">Se deconnecter</a></p>
+			<p class="text-center"><a class="btn btn-primary" role="button" href="{% url 'logout' %}">Se deconnecter</a></p>
 		
 		{% else %}
 
-		  <p><a href="{% url 'login' %}">Se connecter</a></p>
+		 <a class="btn btn-primary" role="button" href="{% url 'login' %}">Se connecter</a>
 		{% endif %}
 {% if message %}
 <div class="alert alert-success" role="alert">
