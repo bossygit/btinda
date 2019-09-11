@@ -22,8 +22,6 @@ Notifications push
 
 Messagerie, notes et commentaires, historique de livraison
 
-** Fonctionnalites de base de l'interface du livreur
-
 Enregistrement/ Connexion / Profil / Statut
 
 Reception des commandes 

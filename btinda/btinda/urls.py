@@ -19,6 +19,7 @@ from courses import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('user/', include('accounts.urls')),
     path('user/', include('django.contrib.auth.urls')),
     path('', views.course, name='course'),
     

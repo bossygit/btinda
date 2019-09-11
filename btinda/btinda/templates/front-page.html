@@ -5,17 +5,18 @@
 	<div class="container">
 		<div class="betinda-box row justify-content-end">
 		<div class="col-md-6">
+
+		<h1 class="heading-primary">
+		<span class="heading-sub">Nous sommes à votre service</span>
+		</h1>
 		{% if user.is_authenticated %}
 
-			<p><a href="{% url 'logout' %}">Se connecter</a></p>
+			<p><a href="{% url 'logout' %}">Se deconnecter</a></p>
 		
 		{% else %}
 
 		  <p><a href="{% url 'login' %}">Se connecter</a></p>
 		{% endif %}
-		<h1 class="heading-primary">
-		<span class="heading-sub">Nous sommes à votre service</span>
-		</h1>
 {% if message %}
 <div class="alert alert-success" role="alert">
   {{ message }}
